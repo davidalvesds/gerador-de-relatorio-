@@ -1,0 +1,85 @@
+COMO USAR O GERADOR DE ENTREGAS
+================================================
+Existem DOIS jeitos de usar este programa. Escolha um:
+
+  CAMINHO A - Rodar direto com Python instalado no computador.
+              Mais simples de preparar, mas cada computador que for
+              usar precisa ter o Python instalado.
+
+  CAMINHO B - Compilar um arquivo .exe UMA VEZ. Depois disso, esse
+              .exe sozinho funciona em qualquer computador Windows,
+              sem instalar nada (nem Python). Recomendado se mais de
+              uma pessoa/computador for usar o programa.
+
+O CAMINHO B usa exatamente os mesmos arquivos do CAMINHO A por tras
+dos panos - eh so um passo a mais (compilar), feito uma unica vez.
+
+
+ANTES DE COMECAR (os dois caminhos)
+--------------------------------------
+Junte estes 9 arquivos em UMA UNICA PASTA no seu computador:
+
+  1. config.py
+  2. dados.py
+  3. excel_export.py
+  4. relatorio.py
+  5. app.py
+  6. Abrir Gerador de Entregas.bat      (usado no CAMINHO A)
+  7. Instalar Pacotes.bat               (usado no CAMINHO A)
+  8. Gerar Executavel.bat               (usado no CAMINHO B)
+  9. LEIA-ME (gerar o exe).txt          (instrucoes do CAMINHO B)
+
+
+====================================================================
+CAMINHO A - Rodar direto com Python
+====================================================================
+
+PASSO A1 - INSTALAR O PYTHON
+  1. Acesse: https://www.python.org/downloads/
+  2. Clique no botao amarelo "Download Python 3.x.x".
+  3. Abra o arquivo baixado. NA PRIMEIRA TELA, marque a caixinha
+     "Add python.exe to PATH" antes de clicar em instalar.
+  4. Clique em "Install Now" e espere terminar.
+
+PASSO A2 - INSTALAR AS BIBLIOTECAS
+  1. De DOIS CLIQUES no arquivo "Instalar Pacotes.bat".
+  2. Espere aparecer "Concluido!" e feche a janela.
+
+PASSO A3 - CONFERIR OS CAMINHOS DAS PLANILHAS (so se precisar)
+  Edite o arquivo "config.py" com o Bloco de Notas (botao direito >
+  Abrir com > Bloco de Notas) e troque os caminhos em ARQUIVO_MCL e
+  ARQUIVO_PRO_ESTRADA, se precisar.
+
+PASSO A4 - USAR
+  De DOIS CLIQUES em "Abrir Gerador de Entregas.bat" sempre que
+  quiser gerar as entregas.
+
+
+
+CAMINHO B - Gerar um .exe unico (nao precisa instalar nada depois)
+
+ Dê dois cliques em
+"Gerar Executavel.bat", espera terminar, e pega o arquivo
+"GeradorDeEntregas.exe" que aparece dentro da pasta "dist". Esse
+arquivo sozinho é tudo que precisa copiar para os outros
+computadores.
+
+
+PROBLEMAS MAIS COMUNS 
+----------------------------------------------
+- Aparece "Nao encontrei o Python instalado neste computador":
+  Repita o PASSO A1 (mesmo no CAMINHO B, quem for compilar precisa
+  do Python). Confira se marcou "Add python.exe to PATH".
+
+- A lista de municipios nao carrega, ou da erro ao ler as
+  planilhas:
+  Confira se voce tem acesso, no momento, a pasta/rede onde ficam
+  as planilhas do Excel. Se elas estao num servidor da empresa,
+  verifique sua conexao com a rede.
+
+- Algum programa nao aparece no relatorio, ou aparece algo errado:
+  No CAMINHO A, veja as mensagens na janela preta atras do app -
+  elas dizem qual coluna de qual aba foi identificada. No CAMINHO B
+  (o .exe, sem janela preta), se der erro ao abrir, procure um
+  arquivo "erro.log" do lado do .exe.
+
